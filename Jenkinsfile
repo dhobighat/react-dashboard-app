@@ -13,7 +13,7 @@ pipeline {
     }
     stage('Pushing to S3') {
         steps {
-            bat 'aws s3 cp ./build s3://react-dashboard-app --recursive'
+            bat 'aws s3 cp ./build s3://aws-dev-dashboard --recursive'
         }
     }
   }

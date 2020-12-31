@@ -12,7 +12,7 @@ class App extends React.Component {
 
 
   componentDidMount() {
-    axios.get('http://aws-ecs-dev-loadbalancer-1747749739.us-east-1.elb.amazonaws.com/getMessage')
+    axios.get('http://aws-dev-alb-1190596654.us-east-1.elb.amazonaws.com/getMessage')
       .then(response => {
         this.setState({'status': response.data});
       })
