@@ -11,7 +11,7 @@
     "react-dom": "^16.14.0",
     "react-scripts": "3.4.3"
   },
-  "proxy": "http://aws-dev-alb-1190596654.us-east-1.elb.amazonaws.com/",
+  "proxy": "http://localhost:8000/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
