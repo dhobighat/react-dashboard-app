@@ -9,7 +9,6 @@ cache:
     - node_modules
 install:
   - npm install
-  - npm i -g --ignore-test-scripts
   - npm run build
 
 after_success:
