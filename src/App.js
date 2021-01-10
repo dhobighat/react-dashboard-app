@@ -6,8 +6,8 @@ class App extends React.Component {
     super(props);
  
     this.state = {
-      dashboard-status: "Getting current Status",
-      product-status: "Getting current Status"
+      dashboardStatus: "Getting current Status",
+      productStatus: "Getting current Status"
     }
   } 
 
@@ -15,24 +15,24 @@ class App extends React.Component {
   componentDidMount() {
     axios.get('http://aws-dev-alb-1190596654.us-east-1.elb.amazonaws.com:8900/dashboard/getMessage')
       .then(response => {
-        this.setState({'dashboard-status': response.data});
+        this.setState({'dashboardStatus': response.data});
       })
       .catch(error => {
-        this.setState({'dashboard-status': error});
+        this.setState({'dashboardStatus': error});
       });
 
       axios.get('http://aws-dev-alb-1190596654.us-east-1.elb.amazonaws.com:8901/product/getMessage')
          .then(response => {
-           this.setState({'product-status': response.data});
+           this.setState({'productStatus': response.data});
          })
          .catch(error => {
-           this.setState({'product-status': error});
+           this.setState({'productStatus': error});
          });
     }
 
   render() {
-    return <h1>Response from Dashboard Service : {this.state.dashboard-status} </h1>;
-    return <h1>Response from Product Service :{this.state.product-status} </h1>;
+    return <h1>Response from Dashboard Service : {this.state.dashboardStatus} </h1>;
+    return <h1>Response from Product Service :{this.state.productStatus} </h1>;
   }
 }
 
