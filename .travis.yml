@@ -9,7 +9,7 @@ cache:
     - node_modules
 install:
   - npm install
-  - npm run build
+  - npm run build --passWithNoTests
 
 after_success:
   - chmod +x deploy.sh
