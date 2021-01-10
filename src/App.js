@@ -6,7 +6,7 @@ class App extends React.Component {
     super(props);
  
     this.state = {
-      dashboard-status: "Getting current Status"
+      dashboard-status: "Getting current Status",
       product-status: "Getting current Status"
     }
   } 
