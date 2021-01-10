@@ -1,18 +1,17 @@
+sudo: required
+dist: trusty
 language: node_js
 node_js:
-  - '8'
-before_cache:
-  - pip install --user awscli
+  - node
 
-before_deploy:
-  - export BUCKET=aws-dev-dashboard LOCAL_DIR=public
+cache:
+  directories:
+    - node_modules
+install:
   - npm install
   - npm run build
+  - npm test --passWithNoTests
 
-deploy:
-  - provider: script
-    skip_cleanup: true
-    script:
-      - awss3-deploy
-    on:
-      branch: master
+after_success:
+  - chmod +x deploy.sh
+  - "./deploy.sh"
