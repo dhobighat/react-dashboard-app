@@ -2,8 +2,7 @@ sudo: required
 dist: trusty
 language: node_js
 node_js:
-  # LTS version
-  - "8.0"
+  - node
 
 cache:
   directories:
@@ -11,7 +10,6 @@ cache:
     -
 install:
   - npm install
-  - npm i -g react-deploy-cli
   - npm run build
 
 after_success:
