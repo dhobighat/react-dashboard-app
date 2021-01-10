@@ -6,6 +6,7 @@ before_cache:
 
 before_deploy:
   - export BUCKET=aws-dev-dashboard LOCAL_DIR=public
+  - npm install
   - npm run build
 
 deploy:
