@@ -33,7 +33,7 @@ class App extends React.Component {
   render() {
     return
     <div>
-        <h1>Response from Dashboard Service : {this.state.dashboardStatus} </h1>;
+        <h1>Response from Dashboard Service : {this.state.dashboardStatus} </h1>
         <h1>Response from Product Service :{this.state.productStatus} </h1>
     </div>;
   }
