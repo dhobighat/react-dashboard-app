@@ -31,7 +31,7 @@ class App extends React.Component {
     }
 
   render() {
-    return <h1> Dashboard Service Message :{this.state.productStatus}, Product Service Message : {this.state.productStatus}</h1>;
+    return <h1> Dashboard Service Message :{this.state.dashboardStatus}, Product Service Message : {this.state.productStatus}</h1>;
   }
 }
 
