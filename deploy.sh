@@ -1,6 +1,4 @@
 #!/bin/bash
-
-S3_BUCKET="aws-dev-dashboard"
 echo "Deploying to the $S3_BUCKET bucket"
 
 # Install the AWS CLI so we can publish to S3
