@@ -13,7 +13,7 @@ class App extends React.Component {
 
 
   componentDidMount() {
-    axios.get('http://aws-dev-alb-1190596654.us-east-1.elb.amazonaws.com:8900/dashboard/getMessage')
+    axios.get('http://dhobhighat-dev-1236471683.us-east-1.elb.amazonaws.com:8900/dashboard/getMessage')
       .then(response => {
         this.setState({'dashboardStatus': response.data});
       })
@@ -21,7 +21,7 @@ class App extends React.Component {
         this.setState({'dashboardStatus': error});
       });
 
-      axios.get('http://aws-dev-alb-1190596654.us-east-1.elb.amazonaws.com:8901/product/getMessage')
+      axios.get('http://dhobhighat-dev-1236471683.us-east-1.elb.amazonaws.com:8901/product/getMessage')
          .then(response => {
            this.setState({'productStatus': response.data});
          })
