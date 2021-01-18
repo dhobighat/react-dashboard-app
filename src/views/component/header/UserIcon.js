@@ -35,7 +35,7 @@ const UserIcon = () => {
         onClose={handleUserIconMenuClose}
       >
         <MenuItem onClick={handleUserIconMenuClose}>My Account Settings</MenuItem>
-        <MenuItem onClick={() => logout({ returnTo: window.location.origin })}>Logout</MenuItem>
+        <MenuItem onClick={() => logout({ returnTo: process.env.REACT_APP_AUTH0_REDIRECT_URL })}>Logout</MenuItem>
       </Menu>
     );
 
