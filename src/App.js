@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
 import { useAuth0 } from '@auth0/auth0-react';
 import AppHeader from './views/component/header/AppHeader';
 import UserDashboard from './views/component/dashboard/UserDashboard';
