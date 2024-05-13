@@ -8,7 +8,7 @@
     "@material-ui/icons": "^4.11.2",
     "@material-ui/styles": "^4.11.2",
     "@mrmlnc/readdir-enhanced": "^2.2.1",
-    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/jest-dom": "^6.0.0",
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.0",
     "auth0-lock-passwordless": "^2.2.3",
@@ -17,7 +17,7 @@
     "json-stable-stringify": "^1.0.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-scripts": "4.0.1",
+    "react-scripts": "5.0.0",
     "web-vitals": "^0.2.4"
   },
   "proxy": "http://localhost:8000/",
